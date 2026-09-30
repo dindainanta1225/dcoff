@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model menu {
+  id         Int    @id @default(autoincrement())
+  nama_menu  String
+  kategori   String
+  harga      Int
+}
+
+model users {
+  id       Int    @id @default(autoincrement())
+  nama     String
+  email    String @unique
+  password String
+}

@@ -1,0 +1,16 @@
+{
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "editor.rulers": [
+        40,
+        80,
+        120
+    ],
+    "python-envs.pythonProjects": [
+        {
+            "path": "app/admin",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
+}
